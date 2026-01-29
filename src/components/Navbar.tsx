@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
       
-      const sections = ['home', 'about', 'songs', 'projects', 'gallery'];
+      const sections = ['home', 'about', 'songs', 'projects', 'promotional', 'gallery'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -76,14 +76,20 @@ const Navbar: React.FC = () => {
           >
             {t('navigation.songs')}
           </a>
-          <a 
-            onClick={() => scrollToSection('projects')} 
+          <a
+            onClick={() => scrollToSection('projects')}
             className={`nav-link ${activeSection === 'projects' ? 'active' : ''}`}
           >
             {t('navigation.projects')}
           </a>
-          <a 
-            onClick={() => scrollToSection('gallery')} 
+          <a
+            onClick={() => scrollToSection('promotional')}
+            className={`nav-link ${activeSection === 'promotional' ? 'active' : ''}`}
+          >
+            {t('navigation.promotional')}
+          </a>
+          <a
+            onClick={() => scrollToSection('gallery')}
             className={`nav-link ${activeSection === 'gallery' ? 'active' : ''}`}
           >
             Gallery
@@ -124,14 +130,20 @@ const Navbar: React.FC = () => {
           >
             {t('navigation.songs')}
           </a>
-          <a 
-            onClick={() => scrollToSection('projects')} 
+          <a
+            onClick={() => scrollToSection('projects')}
             className="mobile-nav-link"
           >
             {t('navigation.projects')}
           </a>
-          <a 
-            onClick={() => scrollToSection('gallery')} 
+          <a
+            onClick={() => scrollToSection('promotional')}
+            className="mobile-nav-link"
+          >
+            {t('navigation.promotional')}
+          </a>
+          <a
+            onClick={() => scrollToSection('gallery')}
             className="mobile-nav-link"
           >
             Gallery

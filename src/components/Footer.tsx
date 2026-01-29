@@ -59,6 +59,11 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
+                <a href="#promotional" className="text-jazz-light hover:text-jazz-gold transition-colors">
+                  {t('navigation.promotional')}
+                </a>
+              </li>
+              <li>
                 <a href="#gallery" className="text-jazz-light hover:text-jazz-gold transition-colors">
                   Gallery
                 </a>

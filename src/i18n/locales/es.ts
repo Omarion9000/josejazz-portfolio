@@ -4,6 +4,7 @@ export default {
     about: 'Sobre Mí',
     songs: 'Canciones',
     projects: 'Proyectos',
+    promotional: 'Eventos Culturales',
     gallery: 'Galería'
   },
   home: {
@@ -73,6 +74,33 @@ export default {
         image: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGlhbm8lMjBkZSUyMGNvbGF8ZW58MHx8MHx8fDA%3D'
       }
     ]
+  },
+  promotional: {
+    title: 'Promocional Musical para Eventos Artísticos y Culturales',
+    subtitle: 'Servicios musicales profesionales diseñados para festivales, teatros, centros culturales, galerías e instituciones artísticas de México.',
+    audioTitle: 'Audio Promocional',
+    idealFor: 'Ideal Para',
+    venues: [
+      'Festivales de Jazz y Culturales',
+      'Teatros y Salas de Conciertos',
+      'Centros Culturales y Museos',
+      'Galerías de Arte y Espacios de Exhibición',
+      'Instituciones Educativas y Universidades',
+      'Eventos Culturales Corporativos',
+      'Eventos Artísticos Internacionales',
+      'Reuniones Culturales Privadas'
+    ],
+    experienceTitle: 'Experiencia Musical',
+    experienceDescription: 'Más de 40 años de experiencia creando atmósferas musicales memorables para eventos culturales y artísticos del más alto nivel.',
+    features: [
+      'Repertorio original y estándares clásicos',
+      'Excelencia profesional técnica y artística',
+      'Adaptación a diversos formatos y recintos',
+      'Experiencia internacional'
+    ],
+    videoTitle: 'Video Promocional Disponible',
+    videoDescription: 'Esta presentación en audio puede acompañarse de un video promocional profesional, ideal para difusión institucional y programación cultural.',
+    contactButton: 'Contactar para Contrataciones'
   },
   footer: {
     rights: 'Todos los Derechos Reservados',

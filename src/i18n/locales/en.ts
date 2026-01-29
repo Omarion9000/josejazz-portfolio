@@ -5,6 +5,7 @@ export default {
     about: 'About',
     songs: 'Songs',
     projects: 'Projects',
+    promotional: 'Cultural Events',
     gallery: 'Gallery'
   },
   home: {
@@ -75,6 +76,33 @@ export default {
 
       },
     ]
+  },
+  promotional: {
+    title: 'Musical Promotion for Artistic and Cultural Events',
+    subtitle: 'Professional musical services designed for festivals, theaters, cultural centers, galleries, and artistic institutions across Mexico.',
+    audioTitle: 'Promotional Audio',
+    idealFor: 'Ideal For',
+    venues: [
+      'Jazz and Cultural Festivals',
+      'Theaters and Concert Halls',
+      'Cultural Centers and Museums',
+      'Art Galleries and Exhibition Spaces',
+      'Educational Institutions and Universities',
+      'Corporate Cultural Events',
+      'International Artistic Events',
+      'Private Cultural Gatherings'
+    ],
+    experienceTitle: 'Musical Experience',
+    experienceDescription: 'More than 40 years of experience creating memorable musical atmospheres for cultural and artistic events of the highest caliber.',
+    features: [
+      'Original repertoire and classic standards',
+      'Technical and artistic professional excellence',
+      'Adaptation to various formats and venues',
+      'International experience'
+    ],
+    videoTitle: 'Video Promotion Available',
+    videoDescription: 'This audio presentation can be accompanied by a professional promotional video, ideal for institutional dissemination and cultural programming.',
+    contactButton: 'Contact for Bookings'
   },
   footer: {
     rights: 'All Rights Reserved',

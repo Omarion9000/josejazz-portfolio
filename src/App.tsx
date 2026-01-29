@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Songs from './components/Songs';
 import Projects from './components/Projects';
+import Promotional from './components/Promotional';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 
@@ -24,6 +25,7 @@ function App() {
         <About />
         <Songs />
         <Projects />
+        <Promotional />
         <Gallery />
       </main>
       <Footer />
