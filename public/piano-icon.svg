@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-piano">
+  <path d="M18.5 5.5H5.5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2Z"/>
+  <polyline points="6 14.5 6 18.5"/>
+  <polyline points="10 14.5 10 18.5"/>
+  <polyline points="14 14.5 14 18.5"/>
+  <polyline points="18 14.5 18 18.5"/>
+  <polyline points="8 5.5 8 14.5"/>
+  <polyline points="12 5.5 12 14.5"/>
+  <polyline points="16 5.5 16 14.5"/>
+</svg>
