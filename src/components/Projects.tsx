@@ -71,14 +71,17 @@ const Projects: React.FC = () => {
               <h3 className="text-2xl font-serif font-bold text-white mb-2">Interested in Collaboration?</h3>
               <p className="text-jazz-light">Let's create something beautiful together.</p>
             </div>
-            <motion.a
-              href="mailto:barajijazz@gmail.com"
-              className="px-6 py-3 bg-jazz-gold text-jazz-black rounded-full font-medium hover:bg-opacity-90 transition-colors"
+            <motion.button
+              type="button"
+              onClick={() => {
+                window.location.href = "mailto:barajijazz@gmail.com";
+              }}
+              className="px-6 py-3 bg-jazz-gold text-jazz-black rounded-full font-medium hover:bg-opacity-90 transition-colors cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Get in Touch
-            </motion.a>
+            </motion.button>
           </div>
         </motion.div>
       </div>

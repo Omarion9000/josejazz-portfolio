@@ -103,15 +103,18 @@ const Promotional: React.FC = () => {
               </div>
 
               {/* CTA */}
-              <motion.a
-                href="mailto:barajijazz@gmail.com?subject=Consulta%20sobre%20presentación%20artística"
-                className="w-full inline-flex items-center justify-center px-8 py-4 bg-jazz-gold text-jazz-black rounded-lg font-medium text-lg hover:bg-opacity-90 transition-all duration-300"
+              <motion.button
+                type="button"
+                onClick={() => {
+                  window.location.href = "mailto:barajijazz@gmail.com?subject=Consulta%20sobre%20presentación%20artística";
+                }}
+                className="w-full inline-flex items-center justify-center px-8 py-4 bg-jazz-gold text-jazz-black rounded-lg font-medium text-lg hover:bg-opacity-90 transition-all duration-300 cursor-pointer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <Mail className="mr-2" size={20} />
                 {t('promotional.contactButton')}
-              </motion.a>
+              </motion.button>
             </div>
           </motion.div>
 
