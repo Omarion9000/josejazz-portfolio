@@ -10,12 +10,12 @@ export default {
   },
   home: {
     welcome: 'Welcome',
-    tagline: 'Crafting musical stories through the keys of jazz',
+    tagline: 'Creating musical stories through jazz piano',
     cta: 'Explore My Music'
   },
   about: {
     title: 'About Me',
-    bio: 'Jazz Pianist – Composer – Arranger – Music Producer\n\nMaestro José Luis Barajas, originally from Tula de Allende, Hidalgo, is a pianist, composer, arranger, and music producer with over 40 years of experience in the national and international music scene. His specialty is jazz fusion, although his versatility has led him to explore various musical genres.',
+    bio: 'Jazz Pianist – Composer – Arranger – Music Producer\n\nMaestro José Luis Barajas, originally from Mexico, is a pianist, composer, arranger, and music producer with over 40 years of experience in the national and international music scene. His specialty is jazz fusion, although his versatility has led him to explore various musical genres.',
     bio2: 'His technical precision and emotional depth create performances that resonate with audiences worldwide, blending traditional elements with contemporary expressions.',
     timeline: 'Career Highlights',
     achievements: [
@@ -71,7 +71,7 @@ export default {
       {
         title: 'Educational Workshop Series',
         description: 'Online and in-person workshops designed to teach jazz piano techniques to students of all levels.',
-        link: '<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBarajasProducciones%2Fvideos%2F578727644228775%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>',
+        link: 'https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBarajasProducciones%2Fvideos%2F578727644228775%2F&show_text=false&width=560&t=0',
         image: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGlhbm8lMjBkZSUyMGNvbGF8ZW58MHx8MHx8fDA%3D'
 
       },

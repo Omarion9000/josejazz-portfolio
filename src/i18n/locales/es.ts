@@ -9,12 +9,12 @@ export default {
   },
   home: {
     welcome: 'Bienvenido',
-    tagline: 'Creando historias musicales a través de las teclas del jazz',
+    tagline: 'Creando historias musicales a través del piano jazz',
     cta: 'Explora Mi Música'
   },
   about: {
     title: 'Sobre Mí',
-    bio: 'Pianista de Jazz – Compositor – Arreglista – Productor Musical\n\nEl Maestro José Luis Barajas, originario de Tula de Allende, Hidalgo, es pianista, compositor, arreglista y productor musical con más de 40 años de experiencia en la escena musical nacional e internacional. Su especialidad es el jazz fusión, aunque su versatilidad lo ha llevado a explorar diversos géneros musicales.',
+    bio: 'Pianista de Jazz – Compositor – Arreglista – Productor Musical\n\nEl Maestro José Luis Barajas, originario de Mexico, es pianista, compositor, arreglista y productor musical con más de 40 años de experiencia en la escena musical nacional e internacional. Su especialidad es el jazz fusión, aunque su versatilidad lo ha llevado a explorar diversos géneros musicales.',
     bio2: 'Su precisión técnica y profundidad emocional crean interpretaciones que resuenan con el público de todo el mundo, fusionando elementos tradicionales con expresiones contemporáneas.',
     timeline: 'Momentos Destacados de su Carrera',
     achievements: [
@@ -70,7 +70,7 @@ export default {
       {
         title: 'Serie de Talleres Educativos',
         description: 'Talleres en línea y presenciales diseñados para enseñar técnicas de piano de jazz a estudiantes de todos los niveles.',
-        link: '<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBarajasProducciones%2Fvideos%2F578727644228775%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>',
+        link: 'https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBarajasProducciones%2Fvideos%2F578727644228775%2F&show_text=false&width=560&t=0',
         image: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGlhbm8lMjBkZSUyMGNvbGF8ZW58MHx8MHx8fDA%3D'
       }
     ]
