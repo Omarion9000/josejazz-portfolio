@@ -1,26 +1,25 @@
-
 export default {
   navigation: {
     home: 'Home',
     about: 'About',
-    songs: 'Songs',
+    songs: 'Music',
     projects: 'Projects',
-    promotional: 'Cultural Events',
-    gallery: 'Gallery'
+    promotional: 'Cultural Events'
   },
   home: {
-    welcome: 'Welcome',
-    tagline: 'Creating musical stories through jazz piano',
-    cta: 'Explore My Music'
+    welcome: 'Jazz Pianist · Composer · Producer',
+    tagline: 'Original repertoire and jazz fusion shaped by four decades on the international stage.',
+    cta: 'Listen'
   },
   about: {
-    title: 'About Me',
+    title: 'About',
+    eyebrow: 'Portrait',
     bio: 'Jazz Pianist – Composer – Arranger – Music Producer\n\nMaestro José Luis Barajas, originally from Mexico, is a pianist, composer, arranger, and music producer with over 40 years of experience in the national and international music scene. His specialty is jazz fusion, although his versatility has led him to explore various musical genres.',
     bio2: 'His technical precision and emotional depth create performances that resonate with audiences worldwide, blending traditional elements with contemporary expressions.',
     timeline: 'Career Highlights',
     achievements: [
       {
-        year: '2020 - Present',
+        year: '2020 — Present',
         title: 'Recent Concerts and Latest Works',
         description: 'Solo piano concerts in Mexico and São Paulo, Brazil, performing original repertoire. In 2021, began recording his solo album "Journey into the Unknown".'
       },
@@ -35,7 +34,7 @@ export default {
         description: 'Established in Hidalgo, Barajas Productions became a professional music services and record label, supporting young regional talents and collaborating on international projects in Miami, Los Angeles, and New York as pianist and arranger.'
       },
       {
-        year: '1990 - 2000',
+        year: '1990 — 2000',
         title: 'Musical Direction in Monterrey',
         description: 'Served as musical director for various projects in Monterrey, N.L. for 18 years, solidifying his career and recognition in the Mexican jazz scene.'
       },
@@ -47,40 +46,54 @@ export default {
     ]
   },
   songs: {
-    title: 'Songs',
-    listen: 'Listen',
+    title: 'Selected Recordings',
+    eyebrow: 'Music',
+    listen: 'Follow Jose Luis Barajas on',
     album: 'Album',
     duration: 'Duration'
   },
   projects: {
-    title: 'Projects',
+    title: 'Projects & Collaborations',
+    eyebrow: 'Work',
     viewProject: 'View Project',
+    collaborationTitle: 'Interested in a collaboration?',
+    collaborationDescription: "Let's create something memorable together.",
+    collaborationCta: 'Get in Touch',
     projects: [
       {
         title: 'La Llorona',
         description: 'An interpretation of "La Llorona" in Zapotec, one of Mexico\'s indigenous languages. This song, deeply rooted in Mexican tradition, is known for its emotional lyrics and melancholic melody, evoking feelings of love, loss, and lament.',
-        link: 'https://www.youtube.com/watch?v=oYhJ_iaJBuo',
-        image: 'https://i.postimg.cc/pdLTc5pB/Screenshot-2025-03-10-at-4-20-18-PM.png'
+        link: 'https://www.youtube.com/watch?v=oYhJ_iaJBuo'
       },
       {
-        title: 'I`m Not the Only One',
-        description: 'We proudly present the latest production, fully crafted at BARAJAS PRODUCCIONES Studio, featuring the talented Angie Soberanes and Jaime Armando. This rendition of Sam Smith`s original song I`m Not the Only One showcases their unique artistry,Musical Producer: José Luis Barajas October 2024.',
-        link: 'https://www.youtube.com/watch?v=y-0S8-At_58',
-        image: 'https://i.postimg.cc/wT81qPRn/Screenshot-2025-03-10-at-4-03-58-PM.png'
+        title: "I'm Not the Only One",
+        description: 'A studio production from BARAJAS PRODUCCIONES, featuring Angie Soberanes and Jaime Armando. A rendition of the Sam Smith original. Music Producer: José Luis Barajas — October 2024.',
+        link: 'https://www.youtube.com/watch?v=y-0S8-At_58'
       },
       {
         title: 'Educational Workshop Series',
         description: 'Online and in-person workshops designed to teach jazz piano techniques to students of all levels.',
-        link: 'https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBarajasProducciones%2Fvideos%2F578727644228775%2F&show_text=false&width=560&t=0',
-        image: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGlhbm8lMjBkZSUyMGNvbGF8ZW58MHx8MHx8fDA%3D'
-
+        link: 'https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBarajasProducciones%2Fvideos%2F578727644228775%2F&show_text=false&width=560&t=0'
       },
+      {
+        title: 'Collaboration with trumpeter Kiwzo Fumero in Miami',
+        description: 'A musical collaboration with trumpeter Kiwzo Fumero, recorded in Miami.',
+        link: 'https://www.youtube.com/watch?v=lg5YUr3mPd0'
+      },
+      {
+        title: 'Toño Caracoza — "No es una Aventura" EP',
+        description: 'Maestro José Luis Barajas served as Music Arranger and Producer for the EP "No es una Aventura" by Toño Caracoza.',
+        link: 'https://open.spotify.com/intl-es/artist/2cYCV8Bn8lzwCYIEEWAAxr?si=x5JOJSs3QI2UswN5C8impg'
+      }
     ]
   },
   promotional: {
     title: 'Musical Promotion for Artistic and Cultural Events',
+    eyebrow: 'Cultural Events',
     subtitle: 'Professional musical services designed for festivals, theaters, cultural centers, galleries, and artistic institutions across Mexico.',
-    audioTitle: 'Promotional Audio',
+    videoTitle: 'Promotional Presentation',
+    videoHint: 'The video plays automatically on mute.',
+    enableSound: 'Enable sound',
     idealFor: 'Ideal For',
     venues: [
       'Jazz and Cultural Festivals',
@@ -100,16 +113,18 @@ export default {
       'Adaptation to various formats and venues',
       'International experience'
     ],
-    videoTitle: 'Video Promotion Available',
-    videoDescription: 'This audio presentation can be accompanied by a professional promotional video, ideal for institutional dissemination and cultural programming.',
     contactButton: 'Contact for Bookings'
   },
+  whatsapp: {
+    label: 'WhatsApp',
+    sub: 'Direct booking'
+  },
   footer: {
-    rights: 'All Rights Reserved',
+    tagline: 'Jazz pianist and composer creating musical stories through the keys of jazz.',
+    rights: 'All rights reserved',
     contact: 'Contact',
     follow: 'Follow',
-    subscribe: 'Subscribe to Newsletter',
-    subscribeButton: 'Subscribe',
-    emailPlaceholder: 'Your email address'
+    quickLinks: 'Sections',
+    developedBy: 'Developed by Michelle Barajas'
   }
 };

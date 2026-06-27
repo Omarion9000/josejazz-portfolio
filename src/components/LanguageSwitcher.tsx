@@ -1,27 +1,30 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+const LANGS = [
+  { code: 'en', label: 'EN' },
+  { code: 'es', label: 'ES' },
+];
+
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
-  
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-  };
+  const active = i18n.language?.startsWith('es') ? 'es' : 'en';
 
   return (
-    <div className="language-switcher">
-      <button 
-        className={`language-button ${i18n.language === 'en' ? 'active' : ''}`}
-        onClick={() => changeLanguage('en')}
-      >
-        EN
-      </button>
-      <button 
-        className={`language-button ${i18n.language === 'es' ? 'active' : ''}`}
-        onClick={() => changeLanguage('es')}
-      >
-        ES
-      </button>
+    <div className="language-switcher" role="group" aria-label="Language">
+      {LANGS.map(({ code, label }, index) => (
+        <React.Fragment key={code}>
+          {index > 0 && <span className="text-bone/25" aria-hidden="true">·</span>}
+          <button
+            type="button"
+            className={`language-button ${active === code ? 'active' : ''}`}
+            onClick={() => i18n.changeLanguage(code)}
+            aria-pressed={active === code}
+          >
+            {label}
+          </button>
+        </React.Fragment>
+      ))}
     </div>
   );
 };

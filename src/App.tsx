@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './i18n';
 import Navbar from './components/Navbar';
@@ -7,8 +7,8 @@ import About from './components/About';
 import Songs from './components/Songs';
 import Projects from './components/Projects';
 import Promotional from './components/Promotional';
-import Gallery from './components/Gallery';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   const { i18n } = useTranslation();
@@ -18,7 +18,7 @@ function App() {
   }, [i18n.language]);
 
   return (
-    <div className="min-h-screen bg-jazz-black text-jazz-light">
+    <div className="min-h-screen bg-ink-900 text-bone selection:bg-brass-400/30">
       <Navbar />
       <main>
         <Hero />
@@ -26,9 +26,9 @@ function App() {
         <Songs />
         <Projects />
         <Promotional />
-        <Gallery />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
