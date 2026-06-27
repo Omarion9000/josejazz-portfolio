@@ -2,10 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
-import lloronaAvif from '../assets/llorona.avif';
-import lloronaJpg from '../assets/llorona.jpg';
-import notTheOnlyOneAvif from '../assets/not-the-only-one.avif';
-import notTheOnlyOneJpg from '../assets/not-the-only-one.jpg';
 
 type Project = {
   title: string;
@@ -13,14 +9,42 @@ type Project = {
   link: string;
 };
 
-// Local cover art for projects. i18n holds copy only; images stay in code so we never hotlink.
-const projectCovers: Array<{ avif: string; jpg: string } | null> = [
-  { avif: lloronaAvif, jpg: lloronaJpg },
-  { avif: notTheOnlyOneAvif, jpg: notTheOnlyOneJpg },
-  null,
-  null,
-  null,
-];
+// Drop covers into src/assets/projects/ as `<slug>.jpg` and optional `<slug>.avif`.
+// Vite picks them up automatically — no edits to this file needed.
+const coverModules = import.meta.glob('../assets/projects/*.{avif,jpg}', {
+  eager: true,
+  import: 'default',
+}) as Record<string, string>;
+
+const PROJECT_SLUGS = [
+  'la-llorona',
+  'im-not-the-only-one',
+  'educational-workshops',
+  'kiwzo-fumero',
+  'tono-caracoza',
+] as const;
+
+const getCover = (slug: string): { avif?: string; jpg: string } | null => {
+  const jpg = coverModules[`../assets/projects/${slug}.jpg`];
+  if (!jpg) return null;
+  const avif = coverModules[`../assets/projects/${slug}.avif`];
+  return avif ? { avif, jpg } : { jpg };
+};
+
+const Placeholder: React.FC<{ index: number }> = ({ index }) => (
+  <div className="absolute inset-0 bg-gradient-to-br from-ink-800 via-ink-850 to-ink-900">
+    <div className="absolute inset-0 grain opacity-60" aria-hidden="true" />
+    <div className="absolute inset-0 flex flex-col items-center justify-center">
+      <span className="font-serif italic text-brass-300/55 text-5xl md:text-6xl leading-none">
+        {String(index + 1).padStart(2, '0')}
+      </span>
+      <span className="mt-3 h-px w-8 bg-brass-400/40" />
+      <span className="mt-3 text-[10px] uppercase tracking-[0.32em] text-bone/45">
+        Cover&nbsp;forthcoming
+      </span>
+    </div>
+  </div>
+);
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();
@@ -43,7 +67,8 @@ const Projects: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {projects.map((project, index) => {
-            const cover = projectCovers[index] ?? null;
+            const slug = PROJECT_SLUGS[index];
+            const cover = slug ? getCover(slug) : null;
             return (
               <motion.a
                 key={project.link}
@@ -57,28 +82,26 @@ const Projects: React.FC = () => {
                 viewport={{ once: true, margin: '-60px' }}
                 whileHover={{ y: -4 }}
               >
-                <div className="relative aspect-[16/10] overflow-hidden bg-ink-800">
+                <div className="relative aspect-[16/10] overflow-hidden bg-ink-850">
                   {cover ? (
-                    <picture>
-                      <source type="image/avif" srcSet={cover.avif} />
+                    <picture className="absolute inset-0 block h-full w-full">
+                      {cover.avif && <source type="image/avif" srcSet={cover.avif} />}
                       <img
                         src={cover.jpg}
                         alt={project.title}
-                        className="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+                        className="block h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
                         loading="lazy"
                         decoding="async"
                       />
                     </picture>
                   ) : (
-                    <div className="relative h-full w-full bg-gradient-to-br from-ink-800 via-ink-850 to-ink-900">
-                      <div className="absolute inset-0 flex items-end p-5">
-                        <span className="text-[10px] uppercase tracking-[0.28em] text-brass-400/80">
-                          Featured Work
-                        </span>
-                      </div>
-                    </div>
+                    <Placeholder index={index} />
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink-900/80 via-ink-900/10 to-transparent opacity-90" />
+                  {/* Vignette — gentle, never overwhelms real images */}
+                  <div
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-900/55 via-ink-900/5 to-transparent"
+                    aria-hidden="true"
+                  />
                 </div>
 
                 <div className="flex flex-1 flex-col p-6">
