@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
             sizes="100vw"
             alt="Portrait of Jose Luis Barajas at the piano"
             className="h-full w-full object-cover object-[center_25%] md:object-[60%_30%]"
-            fetchPriority="high"
+            fetchpriority="high"
             decoding="async"
           />
         </picture>
