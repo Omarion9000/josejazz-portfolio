@@ -19,7 +19,7 @@ export default {
     timeline: 'Momentos Destacados de su Carrera',
     achievements: [
       {
-        year: '2020 — Presente',
+        year: '2020 - Presente',
         title: 'Conciertos Recientes y Últimos Trabajos',
         description: 'Conciertos de piano solo en México y São Paulo, Brasil, interpretando repertorio original. En 2021, comenzó la grabación de su álbum solista "Journey into the Unknown".'
       },
@@ -34,7 +34,7 @@ export default {
         description: 'Fundada en Hidalgo, Barajas Producciones se convirtió en una compañía de servicios musicales y sello discográfico profesional, apoyando a jóvenes talentos regionales y colaborando en proyectos internacionales en Miami, Los Ángeles y Nueva York como pianista y arreglista.'
       },
       {
-        year: '1990 — 2000',
+        year: '1990 - 2000',
         title: 'Dirección Musical en Monterrey',
         description: 'Se desempeñó como director musical en diversos proyectos en Monterrey, N.L. durante 18 años, consolidando su carrera y reconocimiento en la escena del jazz mexicano.'
       },
@@ -67,7 +67,7 @@ export default {
       },
       {
         title: 'I’m Not the Only One',
-        description: 'Una producción del estudio BARAJAS PRODUCCIONES con Angie Soberanes y Jaime Armando. Versión del original de Sam Smith. Productor Musical: José Luis Barajas — Octubre 2024.',
+        description: 'Una producción del estudio BARAJAS PRODUCCIONES con Angie Soberanes y Jaime Armando. Versión del original de Sam Smith. Productor Musical: José Luis Barajas, Octubre 2024.',
         link: 'https://www.youtube.com/watch?v=y-0S8-At_58'
       },
       {
@@ -81,7 +81,7 @@ export default {
         link: 'https://www.youtube.com/watch?v=lg5YUr3mPd0'
       },
       {
-        title: 'Toño Caracoza — EP "No es una Aventura"',
+        title: 'Toño Caracoza: EP "No es una Aventura"',
         description: 'El Maestro José Luis Barajas participó como Arreglista y Productor Musical del EP "No es una Aventura" de Toño Caracoza.',
         link: 'https://open.spotify.com/intl-es/artist/2cYCV8Bn8lzwCYIEEWAAxr?si=x5JOJSs3QI2UswN5C8impg'
       }

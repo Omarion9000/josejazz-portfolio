@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
         <button
           onClick={() => scrollToSection('home')}
           className="flex items-center gap-2.5 group"
-          aria-label="Jose Luis Barajas — home"
+          aria-label="Jose Luis Barajas - home"
         >
           <Piano className="text-brass-400 transition-transform duration-500 group-hover:scale-110" size={22} />
           <span className="font-serif text-base md:text-lg tracking-wide text-bone">

@@ -19,7 +19,7 @@ export default {
     timeline: 'Career Highlights',
     achievements: [
       {
-        year: '2020 — Present',
+        year: '2020 - Present',
         title: 'Recent Concerts and Latest Works',
         description: 'Solo piano concerts in Mexico and São Paulo, Brazil, performing original repertoire. In 2021, began recording his solo album "Journey into the Unknown".'
       },
@@ -34,7 +34,7 @@ export default {
         description: 'Established in Hidalgo, Barajas Productions became a professional music services and record label, supporting young regional talents and collaborating on international projects in Miami, Los Angeles, and New York as pianist and arranger.'
       },
       {
-        year: '1990 — 2000',
+        year: '1990 - 2000',
         title: 'Musical Direction in Monterrey',
         description: 'Served as musical director for various projects in Monterrey, N.L. for 18 years, solidifying his career and recognition in the Mexican jazz scene.'
       },
@@ -67,7 +67,7 @@ export default {
       },
       {
         title: "I'm Not the Only One",
-        description: 'A studio production from BARAJAS PRODUCCIONES, featuring Angie Soberanes and Jaime Armando. A rendition of the Sam Smith original. Music Producer: José Luis Barajas — October 2024.',
+        description: 'A studio production from BARAJAS PRODUCCIONES, featuring Angie Soberanes and Jaime Armando. A rendition of the Sam Smith original. Music Producer: José Luis Barajas, October 2024.',
         link: 'https://www.youtube.com/watch?v=y-0S8-At_58'
       },
       {
@@ -81,7 +81,7 @@ export default {
         link: 'https://www.youtube.com/watch?v=lg5YUr3mPd0'
       },
       {
-        title: 'Toño Caracoza — "No es una Aventura" EP',
+        title: 'Toño Caracoza: "No es una Aventura" EP',
         description: 'Maestro José Luis Barajas served as Music Arranger and Producer for the EP "No es una Aventura" by Toño Caracoza.',
         link: 'https://open.spotify.com/intl-es/artist/2cYCV8Bn8lzwCYIEEWAAxr?si=x5JOJSs3QI2UswN5C8impg'
       }

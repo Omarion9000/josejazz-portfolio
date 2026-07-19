@@ -97,7 +97,7 @@ const Projects: React.FC = () => {
                   ) : (
                     <Placeholder index={index} />
                   )}
-                  {/* Vignette — gentle, never overwhelms real images */}
+                  {/* Vignette: gentle, never overwhelms real images */}
                   <div
                     className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-900/55 via-ink-900/5 to-transparent"
                     aria-hidden="true"
